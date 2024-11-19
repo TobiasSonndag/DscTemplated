@@ -35,7 +35,7 @@ I am open to suggestions. Maybe this approach is not the best, but it helped me 
 
 # Workflow Example
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcc00', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#fff'}}}%%
+%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#ffcc00', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#fff'}}}%%
 graph TD
     A[Start] --> B[Add database code to node]
     B -- "@{<br> Name = 'MyDatabase1'<br> Template = 'DatabaseTemplateV3'<br> Ensure = 'Present'<br>}" --> C[Run Start-DscBuild.ps1]
