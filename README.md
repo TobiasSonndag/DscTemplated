@@ -34,7 +34,7 @@ This is my first PowerShell DSC project. Use it carefully and on your own respon
 I am open to suggestions. Maybe this approach is not the best, but it helped me learn more about PowerShell DSC, Azure Pipelines, Markdown, etc.
 
 # Workflow Example
-:::mermaid
+```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcc00', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#fff'}}}%%
 graph TD
     A[Start] --> B[Add database code to node]
@@ -44,7 +44,7 @@ graph TD
     E --> F[Creates /DSC Artifact with .mof files]
     F --> G[Publish artifact to Pull Server SMB Share]
     G --> H[End]
-:::
+```
 
 # Code Snippets
 Other information related to DSC.
