@@ -1,5 +1,5 @@
 param (
-    [string]$Environment = 'Production',                      #Environment to build (Examples, Production, etc)  
+    [string]$Environment = 'Examples',                      #Environment to build (Examples, Production, etc)  
     [string]$OutputPath = "$PSScriptRoot\$Environment\DSC", #Output path for MOF files
     $ErrorActionPreference = 'Stop'                         #Set global error action
 )

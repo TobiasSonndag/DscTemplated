@@ -1,6 +1,6 @@
 param (
     [string]$resourcePath = "$PSScriptRoot\temp\",
-    [string]$Environment = 'Production', 
+    [string]$Environment = 'Examples', 
     [string]$zipFolderPath = "$PSScriptRoot\$Environment\DSC\Resources",
     [string[]]$Modules = @(
         'PsDesiredStateConfiguration',

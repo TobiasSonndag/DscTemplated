@@ -13,12 +13,12 @@ This PoC wants to achieve below goals:
 1.  Import DSC modules and save the resources \
     Run this on your dev machine one time to install prerequisites. Run this in your pipeline everytime to publish the latest Dsc resouces.
     ```powershell
-    . $PSScriptRoot\Install-Requirements.ps1 -Environment $Environment
+    .\Install-Requirements.ps1 -Environment $Environment
     ```
 2. Build Dsc mof files \
     This is the main script that creates .mof files and their checksums. The DSC folder is the artifact to be published to a Dsc Pull SMB share.
     ```powershell
-    . $PSScriptRoot\Start-DscBuild.ps1 -Environment $Environment
+    .\Start-DscBuild.ps1 -Environment $Environment
     ```
 3. Publish "/$environment/DSC" folder to your Pull Server or use it with manually with Start-DscConfiguration
 
