@@ -64,7 +64,9 @@ Test-DSCConfiguration
 Update-DscConfiguration -Wait -Verbose
 ```
 # Get GUID
-For an SMB Pull Server you need a GUID. I use the Active Directory GUID of the Computer Object. You can also generate a GUID and set it on the node.
+For an SMB Pull Server you need a GUID. I use the Active Directory GUID of the Computer Object. I prepare the node with another PowerShell Script: "Update-PowerShellDscLcm" \
+\
+You can also generate a GUID and set it on the node.
 
 ```Powershell
 $NewGuid = [guid]::NewGuid().ToString()
