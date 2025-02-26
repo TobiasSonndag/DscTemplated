@@ -7,12 +7,12 @@
     Databases = @(
         @{
             Name = "MyDatabase1"
-            Template = "DatabaseTemplateV3"
+            Template = "DatabaseTemplateV7"
             Ensure = "Present"
         },
         @{
             Name = "MyDatabase2"
-            Template = "DatabaseTemplateV3"
+            Template = "DatabaseTemplateV7"
             Ensure = "Absent"
         }
         

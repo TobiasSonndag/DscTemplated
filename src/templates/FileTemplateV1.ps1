@@ -2,11 +2,13 @@ Configuration FileTemplateV1
 {
     param (
         [string]$NodeName,
-        [string]$Domain,
         [string]$Name,
+        [string]$OtherNode = $NodeName,
+        [string]$Domain,
+        [string]$Ensure,
+        [int]$EstimatedTimeSaved = 1,
         [string]$DestinationPath,
-        [string]$Contents,
-        [string]$Ensure
+        [string]$Contents
     )
 
     # Import the module that contains the File resource.
