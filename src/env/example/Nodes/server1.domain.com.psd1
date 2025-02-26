@@ -7,12 +7,12 @@
     Databases = @(
         @{
             Name = "MyDatabase1"
-            Template = "DatabaseTemplateV3"
+            Template = "DatabaseTemplateV7"
             Ensure = "Present"
         },
         @{
             Name = "MyDatabase2"
-            Template = "DatabaseTemplateV3"
+            Template = "DatabaseTemplateV7"
             Ensure = "Absent"
         }
         
@@ -31,6 +31,19 @@
             DestinationPath = "C:\temp\myTestFile2.txt"
             Contents = "This is a test file created by DSC."
             Template = "FileTemplateV1"
+            Ensure = "Absent"
+        }
+    )
+
+    Dns = @(
+        @{
+            Name = "myTestAlias1"
+            Template = "DnsServerResourceRecordCNameV1"
+            Ensure = "Present"
+        },
+        @{
+            Name = "myTestAlias2"
+            Template = "DnsServerResourceRecordCNameV1"
             Ensure = "Absent"
         }
     )
